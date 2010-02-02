@@ -1,0 +1,15 @@
+= qrencode
+
+This serves as Ruby bindings to libqrencode, a QR code encoder library.
+
+== Example
+
+require 'qrencode/magick'
+
+qrcode = QRcode.new("http://blog.seesaa.jp/")
+image = qrcode.draw_magick(:cell_size => 4)
+image.write('qrcode.png')
+
+== Copyright
+
+Copyright (c) 2009, 2010 Akinori MUSHA. See LICENSE for details.
